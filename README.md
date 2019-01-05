@@ -24,6 +24,24 @@ Needless to say, the target organisation may already disclouse this information 
 "arn:aws:" target
 ```
 
+#### Web Sites
+
+Websites belonging to the target organisation may contain various types of leaks including AWS ARNs. There is no easy way to go about this. You need to download the site content and look for strings.
+
+```
+NOTE: SecApps Cohesion might be able to help with this task.
+```
+
+## Methodology
+
+The key to success is having a well defined system to follow. While this rule applies to life as a whole it is particularly useful when performing security assessments. The following table can be used to kickstart any AWS security assessment project:
+
+| Class | Category | Question | Complience |
+|-------|----------|----------|------------|
+|       |          |          |            |
+|       |          |          |            |
+|       |          |          |            |
+
 ## Links
 
 * [Using AWS Account ID’s for IAM User Enumeration](https://rhinosecuritylabs.com/aws/aws-iam-user-enumeration/)
