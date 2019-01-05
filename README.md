@@ -42,7 +42,7 @@ Websites belonging to the target organisation may contain various types of leaks
 
 ## Methodology
 
-The key to success is having a well defined system to follow. While this rule applies to life as a whole it is particularly useful when performing security assessments. The following table can be used to kickstart any AWS security assessment project:
+The key to success is having a well defined system. While this rule applies to life as a whole it is particularly useful when performing security assessments. The following table can be used to kickstart any AWS security assessment project:
 
 | Category           | Question                                    | Complience (Yes/No/Partial) |
 |--------------------|---------------------------------------------|-----------------------------|
