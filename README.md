@@ -4,6 +4,12 @@ This guide provides some basic instructions how to compromise AWS accounts. The 
 
 > WARNING: There will be spelling errors and incorret grammer all over the place. It will get better over time. At this stage we are looking to build the content.
 
+## Introduction
+
+When you hear about AWS security vulnerabilities we often think of misconfigured S3 buckets. No wonder. For some uknown reason s3 buckets happen to be really hard to get right in the majority of organisations and every bucket ever created is a one click away from complete security disaster.
+
+Although s3 buckets are the pinnacle of AWS security, there is so much more one can do. And as it happens, attackers do!
+
 ## Fingerprinting
 
 ### AWS Acount ID Fingerprinting
@@ -62,3 +68,4 @@ The key to success is having a well defined system to follow. While this rule ap
 
 * [Websecurify](https://websecurify.com)
 * [SecApps](https://secapps.com)
+* [GNUCITIZEN](https://gnucitizen.org)
