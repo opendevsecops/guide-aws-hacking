@@ -24,12 +24,35 @@ Public code repositories belonging to the target organisation could contain arti
 docker run opendevsecops/gitleaks --config=/run/configs/aws-enum.toml --github-org=target --exclude-forks -v
 ```
 
+> NOTE: Gitleaks is great but it is a memory hog. Sounds like something that could be automated with pownjs.
+
+#### Docker Hub
+
+It is worth checkout the target docker hub. If the image is not built with a public Dockerfile there is a chance it may container some interesting artifacts. You will be surprised how many time this actually happens.
+
+There are no known tools to automate this process at present.
+
+> NOTE: Sounds like something that can be done with pownjs.
+
+#### NPM, Gem, Maven, Etc.
+
+Companies who use AWS tend to have very diverse software stacks. It is not too uncommon to find references to AWS artifacts in package repositories (especially old ones).
+
+There are no known tools to automate this process at present.
+
+> NOTE: Sounds like something that can be done with pownjs or perhaps build custom solutions with the language that is supported by the package manager.
+
+#### Mobile Apps
+
+Mobile apps often contain more than they should like header files, readmes, configuration files and more. Some developers do not know how to slice (conditionally compile) their soure code such as it does not contain sensitive debug/testing information which often could lead to revealing some interesting aspects about the target including AWS account information and secrets.
+
 #### Search Engines
 
 Needless to say, the target organisation may already disclouse this information somewhere such as GitHub, Stackoverflow, etc. Some basic searches could produce fruitful results:
 
 ```
 "arn:aws:" target
+".amazonaws.com" target
 ```
 
 #### Web Sites
