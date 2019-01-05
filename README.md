@@ -36,11 +36,11 @@ NOTE: SecApps Cohesion might be able to help with this task.
 
 The key to success is having a well defined system to follow. While this rule applies to life as a whole it is particularly useful when performing security assessments. The following table can be used to kickstart any AWS security assessment project:
 
-| Class | Category | Question | Complience |
-|-------|----------|----------|------------|
-|       |          |          |            |
-|       |          |          |            |
-|       |          |          |            |
+| Category       | Question                                    | Complience (Yes/No/Partial) |
+|----------------|---------------------------------------------|-----------------------------|
+| Fingerprinting | Are AWS ARNs leaked on GitHub repositories? |                             |
+|                | Are AWS ARNs leaked on in search engines?   |                             |
+|                | Are AWS ARNs leaked on target sites?        |                             |
 
 ## Links
 
