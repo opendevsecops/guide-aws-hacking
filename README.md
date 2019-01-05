@@ -63,6 +63,10 @@ Websites belonging to the target organisation may contain various types of leaks
 
 > NOTE: SecApps Unfold might be able to help with this task as well.
 
+#### General Rule
+
+Basically the better job you do at anumerating the target the higher the chance of finding something that is useful. There is no single tool that will do this for you. You need to use what you know and be creative.
+
 ## Methodology
 
 The key to success is having a well defined system. While this rule applies to life as a whole it is particularly useful when performing security assessments. The following table can be used to kickstart any AWS security assessment project:
