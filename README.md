@@ -34,7 +34,7 @@ There are no known tools to automate this process at present.
 
 > NOTE: Sounds like something that can be done with pownjs.
 
-#### NPM, Gem, Maven, Etc.
+#### Package Manager (NPM, Gem, Maven, Etc.)
 
 Companies who use AWS tend to have very diverse software stacks. It is not too uncommon to find references to AWS artifacts in package repositories (especially old ones).
 
@@ -42,7 +42,7 @@ There are no known tools to automate this process at present.
 
 > NOTE: Sounds like something that can be done with pownjs or perhaps build custom solutions with the language that is supported by the package manager.
 
-#### Mobile Apps
+#### Mobile Apps (iOS, Android)
 
 Mobile apps often contain more than they should like header files, readmes, configuration files and more. Some developers do not know how to slice (conditionally compile) their soure code such as it does not contain sensitive debug/testing information which often could lead to revealing some interesting aspects about the target including AWS account information and secrets.
 
@@ -63,6 +63,10 @@ Websites belonging to the target organisation may contain various types of leaks
 
 > NOTE: SecApps Unfold might be able to help with this task as well.
 
+#### AWS Bugs
+
+From time to time you may encounter a bug which you can use to map emails to account ids and so on. Be on a constant lookout for these bugs. AWS appears tight in this regard but it like any other software is has its own challanges.
+
 #### General Rule
 
 Basically the better job you do at anumerating the target the higher the chance of finding something that is useful. There is no single tool that will do this for you. You need to use what you know and be creative.
@@ -71,11 +75,11 @@ Basically the better job you do at anumerating the target the higher the chance 
 
 The key to success is having a well defined system. While this rule applies to life as a whole it is particularly useful when performing security assessments. The following table can be used to kickstart any AWS security assessment project:
 
-| Category           | Question                                    | Complience (Yes/No/Partial) |
-|--------------------|---------------------------------------------|-----------------------------|
-| **Fingerprinting** | Are AWS ARNs leaked on GitHub repositories? |                             |
-|                    | Are AWS ARNs leaked on in search engines?   |                             |
-|                    | Are AWS ARNs leaked on target sites?        |                             |
+| Category           | Question                                         | Complience (Yes/No/Partial) |
+|--------------------|--------------------------------------------------|-----------------------------|
+| **Fingerprinting** | Are AWS resources leaked on GitHub repositories? |                             |
+|                    | Are AWS resources leaked on in search engines?   |                             |
+|                    | Are AWS resources leaked on target sites?        |                             |
 
 ## Links
 
