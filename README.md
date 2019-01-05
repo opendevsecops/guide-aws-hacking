@@ -30,6 +30,10 @@ Needless to say, the target organisation may already disclouse this information 
 * [Assume the Worst: Enumerating AWS Roles through AssumeRole](https://rhinosecuritylabs.com/aws/assume-worst-aws-assume-role-enumeration/)
 * [Cloud Breach: Compromising AWS IAM Credentials](https://rhinosecuritylabs.com/aws/aws-iam-credentials-get-compromised/)
 
+## Labs
+
+* [Terraform AWS Goat](https://github.com/opendevsecops/terraform-aws-goat)
+
 ## Authors
 
 * [@pdp](https://twitter.com/pdp)
