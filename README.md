@@ -81,6 +81,10 @@ The key to success is having a well defined system. While this rule applies to l
 |                    | Are AWS resources leaked on in search engines?   |                             |
 |                    | Are AWS resources leaked on target sites?        |                             |
 
+## Tools
+
+* [Bucket Searching By Grayhatwarfare](https://buckets.grayhatwarfare.com)
+
 ## Links
 
 * [Using AWS Account ID’s for IAM User Enumeration](https://rhinosecuritylabs.com/aws/aws-iam-user-enumeration/)
