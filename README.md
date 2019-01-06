@@ -100,7 +100,7 @@ Additionally the following URLs can be queried for sensitive information if you 
 
 ## Tools
 
-* [Bucket Searching By Grayhatwarfare](https://buckets.grayhatwarfare.com)
+* [Bucket Search By Grayhatwarfare](https://buckets.grayhatwarfare.com)
 * [Pacu AWS Exploitation Framework](https://github.com/RhinoSecurityLabs/pacu)
 
 ## Links
