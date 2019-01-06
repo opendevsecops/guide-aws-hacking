@@ -81,6 +81,23 @@ The key to success is having a well defined system. While this rule applies to l
 |                    | Are AWS resources leaked on in search engines?   |                             |
 |                    | Are AWS resources leaked on target sites?        |                             |
 
+## Defaults
+
+You will find AWS credentials in the following locations:
+
+| OS          | Path                               |
+|-------------|------------------------------------|
+| Window      | C:\Users\USERNAME\.aws\credentials |
+| Linux/Unix  | /home/USERNAME/.aws/credentials    |
+
+Additionally the following URLs can be queried for sensitive information if you already have access to AWS (EC2).
+
+| URL                                                                               | Description                             |
+|-----------------------------------------------------------------------------------|-----------------------------------------|
+| http://169.254.169.254/latest/meta-data/iam/security-credentials/                 | Name of the attached instance profile   |
+| http://169.254.169.254/latest/meta-data/iam/security-credentials/the_profile_name | The actual credentials from the profile |
+| http://169.254.169.254/latest/meta-data/iam/security-credentials/dummy            | Same as above but works with AWS Glue   |
+
 ## Tools
 
 * [Bucket Searching By Grayhatwarfare](https://buckets.grayhatwarfare.com)
