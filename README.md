@@ -6,7 +6,7 @@ This guide provides some basic instructions how to compromise AWS accounts. The 
 
 ## Introduction
 
-When you hear about AWS security vulnerabilities we often think of misconfigured S3 buckets. No wonder. For some uknown reason s3 buckets happen to be really hard to get right in the majority of organisations and every bucket ever created is a one click away from complete security disaster.
+When you hear about AWS security vulnerabilities we often think of misconfigured S3 buckets. No wonder. For some uknown reason s3 buckets happen to be particularly tricky to get right in the majority of organisations and every bucket ever created is a one click away from complete security disaster.
 
 Although s3 buckets are the pinnacle of AWS security, there is so much more one can do. And as it happens, attackers do!
 
