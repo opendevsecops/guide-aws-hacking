@@ -111,6 +111,12 @@ Rhino Security Labs has a tone of tutorials on how to hack into AWS.
 * [Assume the Worst: Enumerating AWS Roles through AssumeRole](https://rhinosecuritylabs.com/aws/assume-worst-aws-assume-role-enumeration/)
 * [Cloud Breach: Compromising AWS IAM Credentials](https://rhinosecuritylabs.com/aws/aws-iam-credentials-get-compromised/)
 * [AWS IAM Enumeration 2.0: Bypassing CloudTrail Logging](https://rhinosecuritylabs.com/aws/aws-iam-enumeration-2-0-bypassing-cloudtrail-logging/)
+* [AWS Privilege Escalation – Methods and Mitigation
+](https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigation/)
+* [Cloud Security Risks (Part 1): Azure CSV Injection Vulnerability](https://rhinosecuritylabs.com/azure/cloud-security-risks-part-1-azure-csv-injection-vulnerability/)
+* [Cloud Security Risks (P2): CSV Injection in AWS CloudTrail](https://rhinosecuritylabs.com/aws/cloud-security-csv-injection-aws-cloudtrail/)
+* [Penetration Testing AWS Storage: Kicking the S3 Bucket
+](https://rhinosecuritylabs.com/penetration-testing/penetration-testing-aws-storage/)
 
 ## Labs
 
