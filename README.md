@@ -101,16 +101,21 @@ Additionally the following URLs can be queried for sensitive information if you 
 ## Tools
 
 * [Bucket Searching By Grayhatwarfare](https://buckets.grayhatwarfare.com)
+* [Pacu AWS Exploitation Framework](https://github.com/RhinoSecurityLabs/pacu)
 
 ## Links
+
+Rhino Security Labs has a tone of tutorials on how to hack into AWS.
 
 * [Using AWS Account ID’s for IAM User Enumeration](https://rhinosecuritylabs.com/aws/aws-iam-user-enumeration/)
 * [Assume the Worst: Enumerating AWS Roles through AssumeRole](https://rhinosecuritylabs.com/aws/assume-worst-aws-assume-role-enumeration/)
 * [Cloud Breach: Compromising AWS IAM Credentials](https://rhinosecuritylabs.com/aws/aws-iam-credentials-get-compromised/)
+* [AWS IAM Enumeration 2.0: Bypassing CloudTrail Logging](https://rhinosecuritylabs.com/aws/aws-iam-enumeration-2-0-bypassing-cloudtrail-logging/)
 
 ## Labs
 
 * [Terraform AWS Goat](https://github.com/opendevsecops/terraform-aws-goat)
+* [Cloud Goat](https://github.com/RhinoSecurityLabs/cloudgoat)
 
 ## Authors
 
