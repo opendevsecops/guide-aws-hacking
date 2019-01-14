@@ -1,4 +1,5 @@
 [![Follow on Twitter](https://img.shields.io/twitter/follow/opendevsecops.svg?logo=twitter)](https://twitter.com/opendevsecops)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d095fd957fe404da20ab90ef0db8770)](https://www.codacy.com/app/OpenDevSecOps/guide-aws-hacking?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=opendevsecops/guide-aws-hacking&amp;utm_campaign=Badge_Grade)
 
 # AWS Hacking
 
