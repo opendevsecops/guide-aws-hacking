@@ -15,6 +15,8 @@ Although s3 buckets are the pinnacle of AWS security, there is so much more one 
 
 ## Fingerprinting
 
+The more you know about the target organisation the better you can do when you try to find security vulnerabilities.
+
 ### AWS Acount ID Fingerprinting
 
 Information about related account ids that belongs to the target organisation is not directly available. There are however, various techniques that can be used to obtain such information. This information can be subsequently used to find AWS account ids.
@@ -28,6 +30,15 @@ docker run opendevsecops/gitleaks --config=/run/configs/aws-enum.toml --github-o
 ```
 
 > NOTE: Gitleaks is great but it is a memory hog. Sounds like something that could be automated with pownjs.
+
+You can use [recon](https://github.com/pownjs/pown-recon) from the [pown](https://pownjs.com/) toolkit to quickly find github account you would like to target. Here is an example how this could work:
+
+```sh
+pown recon t githublistmembers <target>
+pown recon t githublistrepos <target|member>
+```
+
+Use the method above to dump the leaks once you identify all repositories.
 
 #### Docker Hub
 
@@ -56,6 +67,12 @@ Needless to say, the target organisation may already disclouse this information 
 ```
 "arn:aws:" target
 ".amazonaws.com" target
+```
+
+Mix the above a little bit for more targeted results. For example, the following search query will try to find AWS-related information in trello boards:
+
+```
+"arn:aws:" target site:trello.com
 ```
 
 #### Web Sites
