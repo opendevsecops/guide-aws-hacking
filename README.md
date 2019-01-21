@@ -3,9 +3,9 @@
 
 # AWS Hacking
 
-This guide provides some basic instructions how to compromise AWS accounts. The hope is that by knowing how to take advantage of various types of AWS weaknesses you will be verse enough to provide the correct countermeasures.
+This guide provides some basic instructions how to compromise AWS. The hope is that by knowing how to take advantage of various types of AWS weaknesses you will be verse enough to provide the correct countermeasures.
 
-> WARNING: There will be spelling errors and incorret grammer all over the place. It will get better over time. At this stage we are looking to build the content.
+> **WARNING**: There will be spelling errors and incorret grammer all over the place because we are not checking for such things at this point in time. It will get better. At this stage we are looking to build the content.
 
 ## Introduction
 
