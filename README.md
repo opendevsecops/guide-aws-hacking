@@ -21,6 +21,15 @@ The more you know about the target organisation the better you can do when you t
 
 Basically the better job you do at anumerating the target the higher the chance of finding something that is useful. There is no single tool that will do this for you. You need to use what you know and be creative.
 
+### AWS Default URLs
+
+AWS have a bunch of default URLs which you can quite easily find.
+
+| Description                        |                                                     |
+|------------------------------------|-----------------------------------------------------|
+| IAM User Sign In Link (name)       | https://**name**.signin.aws.amazon.com/console      |
+| IAM User Sign In Link (account id) | https://**accountid**.signin.aws.amazon.com/console |
+
 ### Public Code Repositories
 
 Public code repositories belonging to the target organisation could contain artifacts related to AWS accounts such as ARNs (Amazon Resource Names). [Gitleaks](https://github.com/zricethezav/gitleaks) is a tool which comes extremely useful in such situations. In fact, OpenDevSecops official [Gitleaks Docker Build](https://github.com/opendevsecops/docker-gitleaks) contains prebuilt configuration files that can be used to enumerate AWS resources. Here is an example:
