@@ -13,15 +13,13 @@ When you hear about AWS security vulnerabilities we often think of misconfigured
 
 Although s3 buckets are the pinnacle of AWS security, there is so much more one can do. And as it happens, attackers do!
 
+The purpose of this project is to provide some guidelines of the various tips, tricks and techniques that take to compromise an AWS account.
+
 ## Fingerprinting
 
-The more you know about the target organisation the better you can do when you try to find security vulnerabilities.
+The more you know about the target organisation the better you can do when you try to find security vulnerabilities. This principle broadly applies to anything and AWS is no exception. Generally, we try to find AWS account ids, ARNs, IP addresses, Role Names and other related AWS information.
 
-### AWS Acount ID Fingerprinting
-
-Information about related account ids that belongs to the target organisation is not directly available. There are however, various techniques that can be used to obtain such information. This information can be subsequently used to find AWS account ids.
-
-#### Public Code Repositories
+### Public Code Repositories
 
 Public code repositories belonging to the target organisation could contain artifacts related to AWS accounts such as ARNs (Amazon Resource Names). [Gitleaks](https://github.com/zricethezav/gitleaks) is a tool which comes extremely useful in such situations. In fact, OpenDevSecops official [Gitleaks Docker Build](https://github.com/opendevsecops/docker-gitleaks) contains prebuilt configuration files that can be used to enumerate AWS resources. Here is an example:
 
@@ -29,7 +27,7 @@ Public code repositories belonging to the target organisation could contain arti
 docker run opendevsecops/gitleaks --config=/run/configs/aws-enum.toml --github-org=target --exclude-forks -v
 ```
 
-> NOTE: Gitleaks is great but it is a memory hog. Sounds like something that could be automated with pownjs.
+> **NOTE**: Gitleaks is great but it is a memory hog. Sounds like something that could be automated with pownjs in the future.
 
 You can use [recon](https://github.com/pownjs/pown-recon) from the [pown](https://pownjs.com/) toolkit to quickly find github account you would like to target. Here is an example how this could work:
 
@@ -40,27 +38,30 @@ pown recon t githublistrepos <target|member>
 
 Use the method above to dump the leaks once you identify all repositories.
 
-#### Docker Hub
+Pay particular attention to personal dotfile repositories. It is very common to see such things discloused online.
 
-It is worth checkout the target docker hub. If the image is not built with a public Dockerfile there is a chance it may container some interesting artifacts. You will be surprised how many time this actually happens.
+### Docker Hub
+
+It is worth checkout the target docker hub for target related images. If the image is not built with a public Dockerfile there is a chance it may container some interesting artifacts.
 
 There are no known tools to automate this process at present.
 
-> NOTE: Sounds like something that can be done with pownjs.
+> **NOTE**: Sounds like something that can be done with pownjs.
+> **TODO**: There is a tool to discover each change in the image. What was the name?
 
-#### Package Manager (NPM, Gem, Maven, Etc.)
+### Package Manager (NPM, Gem, Maven, Etc.)
 
 Companies who use AWS tend to have very diverse software stacks. It is not too uncommon to find references to AWS artifacts in package repositories (especially old ones).
 
-There are no known tools to automate this process at present.
+There are no known tools to automate this process at present. You need to download each individual package version and check for useful information.
 
 > NOTE: Sounds like something that can be done with pownjs or perhaps build custom solutions with the language that is supported by the package manager.
 
-#### Mobile Apps (iOS, Android)
+### Mobile Apps (iOS, Android)
 
 Mobile apps often contain more than they should like header files, readmes, configuration files and more. Some developers do not know how to slice (conditionally compile) their soure code such as it does not contain sensitive debug/testing information which often could lead to revealing some interesting aspects about the target including AWS account information and secrets.
 
-#### Search Engines
+### Web Search Engines
 
 Needless to say, the target organisation may already disclouse this information somewhere such as GitHub, Stackoverflow, etc. Some basic searches could produce fruitful results:
 
@@ -75,19 +76,29 @@ Mix the above a little bit for more targeted results. For example, the following
 "arn:aws:" target site:trello.com
 ```
 
-#### Web Sites
+It is also possible to discover other types of resources in AWS that could lead to fruitful results. For example, elastic search instances can be discovered with simple searches like this:
 
-Websites belonging to the target organisation may contain various types of leaks including AWS ARNs. There is no easy way to go about this. You need to download the site content and look for strings.
+```
 
-> NOTE: SecApps Cohesion might be able to help with this task.
+```
 
-> NOTE: SecApps Unfold might be able to help with this task as well.
+### Shodan, ZoomEye, Censys
 
-#### AWS Bugs
+These sites can be used to find potentially interesting information that relates to the target. Try all of them and see what you can get. Again, the aim to find things that are related, not just some random open targets on the internet, which plenty can be found with ease.
+
+### Web Sites
+
+Websites belonging to the target organisation may contain various types of leaks including AWS ARNs. There is no easy way to go about this. You need to download the site content and look for strings. You can look at tools such as `httrack` to do this for you. There is also a large collection of tools that can be used in this domain over [here](https://github.com/BruceDone/awesome-crawler).
+
+> **NOTE**: SecApps Cohesion might be able to help with this task.
+
+> **NOTE**: SecApps Unfold might be able to help with this task as well.
+
+### AWS Bugs
 
 From time to time you may encounter a bug which you can use to map emails to account ids and so on. Be on a constant lookout for these bugs. AWS appears tight in this regard but it like any other software is has its own challanges.
 
-#### General Rule
+### General Rule
 
 Basically the better job you do at anumerating the target the higher the chance of finding something that is useful. There is no single tool that will do this for you. You need to use what you know and be creative.
 
