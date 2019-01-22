@@ -92,6 +92,8 @@ Once you discover something that could be related to the target, pay attention t
 
 Pay attention to banners. ZoomEye will automatically match versions to known vulnerabilities which is particularly useful. Exploits for these vulnerabilities could be found in known places like Exploit-Db and Metasploit but also have a good look at GitHub. There are a lot of exploits in there too.
 
+> **NOTE**: This is automateable with pown recon scrapers. I just need to build them.
+
 ### Web Sites
 
 Websites belonging to the target organisation may contain various types of leaks including AWS ARNs. There is no easy way to go about this. You need to download the site content and look for strings. You can look at tools such as `httrack` to do this for you. There is also a large collection of tools that can be used in this domain over [here](https://github.com/BruceDone/awesome-crawler).
