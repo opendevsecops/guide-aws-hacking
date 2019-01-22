@@ -29,6 +29,7 @@ AWS have a bunch of default URLs which you can quite easily find.
 |------------------------------------|-----------------------------------------------------|
 | IAM User Sign In Link (name)       | https://**name**.signin.aws.amazon.com/console      |
 | IAM User Sign In Link (account id) | https://**accountid**.signin.aws.amazon.com/console |
+| AWS SSO Start Page                 | https://**name**.awsapps.com/start                  |
 
 ### Public Code Repositories
 
