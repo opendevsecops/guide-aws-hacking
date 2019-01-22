@@ -193,6 +193,8 @@ Rhino Security Labs has a tone of tutorials on how to hack into AWS.
 
 * [Terraform AWS Goat](https://github.com/opendevsecops/terraform-aws-goat)
 * [Cloud Goat](https://github.com/RhinoSecurityLabs/cloudgoat)
+* [Flaws](http://flaws.cloud/)
+* [Flaws2](http://flaws2.cloud/)
 
 ## Authors
 
