@@ -19,6 +19,8 @@ The purpose of this project is to provide some guidelines of the various tips, t
 
 The more you know about the target organisation the better you can do when you try to find security vulnerabilities. This principle broadly applies to anything and AWS is no exception. Generally, we try to find AWS account ids, ARNs, IP addresses, Role Names and other related AWS information.
 
+Basically the better job you do at anumerating the target the higher the chance of finding something that is useful. There is no single tool that will do this for you. You need to use what you know and be creative.
+
 ### Public Code Repositories
 
 Public code repositories belonging to the target organisation could contain artifacts related to AWS accounts such as ARNs (Amazon Resource Names). [Gitleaks](https://github.com/zricethezav/gitleaks) is a tool which comes extremely useful in such situations. In fact, OpenDevSecops official [Gitleaks Docker Build](https://github.com/opendevsecops/docker-gitleaks) contains prebuilt configuration files that can be used to enumerate AWS resources. Here is an example:
@@ -79,7 +81,7 @@ Mix the above a little bit for more targeted results. For example, the following
 It is also possible to discover other types of resources in AWS that could lead to fruitful results. For example, elastic search instances can be discovered with simple searches like this:
 
 ```
-
+target inurl:/_plugin/kibana site:es.amazonaws.com
 ```
 
 ### Shodan, ZoomEye, Censys
@@ -98,9 +100,9 @@ Websites belonging to the target organisation may contain various types of leaks
 
 From time to time you may encounter a bug which you can use to map emails to account ids and so on. Be on a constant lookout for these bugs. AWS appears tight in this regard but it like any other software is has its own challanges.
 
-### General Rule
+## Access Tokens
 
-Basically the better job you do at anumerating the target the higher the chance of finding something that is useful. There is no single tool that will do this for you. You need to use what you know and be creative.
+If you are lucky and you know have some access tokens in the form of AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and/or AWS_SESSION_TOKEN you can start interogating the AWS environment itself.
 
 ## Methodology
 
@@ -113,6 +115,14 @@ The key to success is having a well defined system. While this rule applies to l
 |                    | Are AWS resources leaked on target sites?        |                             |
 
 ## Defaults
+
+The key AWS environments are
+
+| Name | Purpose |
+|------|---------|
+| AWS_ACCESS_KEY_ID | |
+| AWS_SECRET_ACCESS_KEY | |
+| AWS_SESSION_TOKEN | |
 
 You will find AWS credentials in the following locations:
 
