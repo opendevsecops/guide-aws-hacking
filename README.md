@@ -100,9 +100,11 @@ Websites belonging to the target organisation may contain various types of leaks
 
 From time to time you may encounter a bug which you can use to map emails to account ids and so on. Be on a constant lookout for these bugs. AWS appears tight in this regard but it like any other software is has its own challanges.
 
-## Access Tokens
+## Access
 
-If you are lucky and you know have some access tokens in the form of AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and/or AWS_SESSION_TOKEN you can start interogating the AWS environment itself.
+If you are lucky and you know have some access tokens in the form of AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and/or AWS_SESSION_TOKEN you can start interogating the AWS environment itself. You have done some pretty good job but there is still a lot to be done.
+
+## Persistence
 
 ## Methodology
 
