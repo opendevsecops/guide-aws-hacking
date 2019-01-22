@@ -88,6 +88,8 @@ target inurl:/_plugin/kibana site:es.amazonaws.com
 
 These sites can be used to find potentially interesting information that relates to the target. Try all of them and see what you can get. Again, the aim to find things that are related, not just some random open targets on the internet, which plenty can be found with ease.
 
+Once you discover something that could be related to the target, pay attention to adjacent ranges. You might need to portscan these as well or at the very least look them up with the search engine of choice. This is not always a fruitful task but it could return some interesting results.
+
 ### Web Sites
 
 Websites belonging to the target organisation may contain various types of leaks including AWS ARNs. There is no easy way to go about this. You need to download the site content and look for strings. You can look at tools such as `httrack` to do this for you. There is also a large collection of tools that can be used in this domain over [here](https://github.com/BruceDone/awesome-crawler).
