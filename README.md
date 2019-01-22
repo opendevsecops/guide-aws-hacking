@@ -92,7 +92,11 @@ Once you discover something that could be related to the target, pay attention t
 
 Pay attention to banners. ZoomEye will automatically match versions to known vulnerabilities which is particularly useful. Exploits for these vulnerabilities could be found in known places like Exploit-Db and Metasploit but also have a good look at GitHub. There are a lot of exploits in there too.
 
-> **NOTE**: This is automateable with pown recon scrapers. I just need to build them.
+You can use Pown Recon for this. For example:
+
+```
+pown recon t zoomeyescrapesearchresults target
+```
 
 ### Web Sites
 
