@@ -106,7 +106,7 @@ Websites belonging to the target organisation may contain various types of leaks
 
 From time to time you may encounter a bug which you can use to map emails to account ids and so on. Be on a constant lookout for these bugs. AWS appears tight in this regard but it like any other software is has its own challanges.
 
-> **<NOTE>**: this section needs to be organised better
+> **NOTE**: this section needs to be organised better
 
 ## Phishing
 
@@ -126,7 +126,7 @@ Once we know who works for the org (see above) we can identify what they are wor
 
 Hackers don't hack computers. They hack people. So following peopple online (twitter, reddit, etc) will also help in many circulstances understand the target landscape.
 
-> **</NOTE>**:
+> **/NOTE**:
 
 ## Access
 
