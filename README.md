@@ -106,6 +106,14 @@ Websites belonging to the target organisation may contain various types of leaks
 
 From time to time you may encounter a bug which you can use to map emails to account ids and so on. Be on a constant lookout for these bugs. AWS appears tight in this regard but it like any other software is has its own challanges.
 
+## Phishing
+
+Emails that look like coming from AWS could be used for phishing. For example, AWS Trust Advisor does send some relatively easy to spoof emails and they come frueqnet enough to fool most people.
+
+## Other Ways To Get In
+
+Company networks are often direclty connected to the AWS cloud environment. Breaking in the company network will give you AWS access as well in most cases. Obviously a classic APT will work really well but you might be lucky if you get access to guest network, which could be misconfigured and as a result get you access to AWS. This is particularly true if the company is using ACLs to allow access to company ranges from AWS resources like API Gateway. The public IP listed in these ranges could be the office network IP space which often might not be a dedicated IP space but shared with others. Think of co-working spaces.
+
 ## Access
 
 If you are lucky and you know have some access tokens in the form of AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and/or AWS_SESSION_TOKEN you can start interogating the AWS environment itself. You have done some pretty good job but there is still a lot to be done.
