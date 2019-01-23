@@ -31,7 +31,7 @@ AWS provides a number of user-friendly URLs for login into AWS Console or as AWS
 | IAM User Sign In Link (account id) | https://**accountid**.signin.aws.amazon.com/console |
 | AWS SSO Start Page                 | https://**name**.awsapps.com/start                  |
 
-In most circumstances we would like to find out the target name is associated with either IAM Sign In Page or SSO Start Page.
+We would like to find out the target name is associated with either IAM Sign In Page or SSO Start Page. This could help us to perform bruteforce attacks if there is nothing else to try.
 
 > **NOTE**: You can use [Pown Recon](https://pownjs.com) to perform this type of enumeration. `pown recon t awsie <target>`.
 
