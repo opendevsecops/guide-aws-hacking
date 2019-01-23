@@ -33,7 +33,7 @@ AWS provides a number of user-friendly URLs for login into AWS Console or as AWS
 
 We would like to find out the target name is associated with either IAM Sign In Page or SSO Start Page. This could help us to perform bruteforce attacks if there is nothing else to try.
 
-> **NOTE**: You can use [Pown Recon](https://pownjs.com) to perform this type of enumeration. `pown recon t awsie <target>`.
+> **NB**: You can use [Pown Recon](https://pownjs.com) to perform this type of enumeration. `pown recon t awsie <target>`.
 
 ### Public Code Repositories
 
