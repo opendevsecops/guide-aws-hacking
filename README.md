@@ -21,15 +21,19 @@ The more you know about the target organisation the better you can do when you t
 
 Basically the better job you do at anumerating the target the higher the chance of finding something that is useful. There is no single tool that will do this for you. You need to use what you know and be creative.
 
-### AWS Default URLs
+### AWS Login URLs
 
-AWS have a bunch of default URLs which you can quite easily find.
+AWS provides a number of user-friendly URLs for login into AWS Console or as AWS SSO User.
 
 | Description                        |                                                     |
 |------------------------------------|-----------------------------------------------------|
 | IAM User Sign In Link (name)       | https://**name**.signin.aws.amazon.com/console      |
 | IAM User Sign In Link (account id) | https://**accountid**.signin.aws.amazon.com/console |
 | AWS SSO Start Page                 | https://**name**.awsapps.com/start                  |
+
+In most circumstances we would like to find out the target name is associated with either IAM Sign In Page or SSO Start Page.
+
+> **NOTE**: You can use [Pown Recon](https://pownjs.com) to perform this type of enumeration. `pown recon t awsie <target>`.
 
 ### Public Code Repositories
 
