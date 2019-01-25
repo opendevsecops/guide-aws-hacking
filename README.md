@@ -170,6 +170,11 @@ CloudFront is composed of origins. Each origin provides a URL mapping from Cloud
 
 It is particularly useful to run a directory/web bruteforcing on CloudFront distributions as that will reveal different backends. Pay attention on subtle differences in the HTTP response server header, response code, length and other types of metadata that may indicate a different backend. Discovering the different backends will help not only help understand the target infrastructure but also help choose the correct type of attack.
 
+#### Useful Facts
+
+* The origin will always see `Amazon CloudFront` for the User-Agent. The client user-agent is not supplied.
+* In fact, no request headers will be provided to the origin (unless configured, as it can be done for cookies).
+
 ## Methodology
 
 The key to success is having a well defined system. While this rule applies to life as a whole it is particularly useful when performing security assessments. The following table can be used to kickstart any AWS security assessment project:
