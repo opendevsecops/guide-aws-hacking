@@ -152,6 +152,24 @@ If you are lucky and you know have some access tokens in the form of AWS_ACCESS_
 
 ## Persistence
 
+## AWS Technologies
+
+The following section is dedicated to various AWS technologies and various type of peculiarities that are subject to abuse.
+
+### CloudFront
+
+> Amazon CloudFront speeds up distribution of your static and dynamic web content, such as .html, .css, .php, image, and media files. When users request your content, CloudFront delivers it through a worldwide network of edge locations that provide low latency and high performance.
+
+#### Introduction
+
+CloudFront provides CDN services. In essense it is a a reverse proxy to web services with support for aggresive cashing. You can stick CloudFront infront of anything including internal AWS services like lambda.
+
+CloudFront is composed of origins. Each origin provides a URL mapping from CloudFront to the internal service where the requests are proxied to. This means that a CloudFront distribution can be used to expose resources from multiple backends. For example the same CloudFront distribution can expose resources from both an s3 bucket and some internal service at the same time. These are mapped as origins.
+
+#### Enumeration
+
+It is particularly useful to run a directory/web bruteforcing on CloudFront distributions as that will reveal different backends. Pay attention on subtle differences in the HTTP response server header, response code, length and other types of metadata that may indicate a different backend. Discovering the different backends will help not only help understand the target infrastructure but also help choose the correct type of attack.
+
 ## Methodology
 
 The key to success is having a well defined system. While this rule applies to life as a whole it is particularly useful when performing security assessments. The following table can be used to kickstart any AWS security assessment project:
