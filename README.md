@@ -175,6 +175,10 @@ It is particularly useful to run a directory/web bruteforcing on CloudFront dist
 * The origin will always see `Amazon CloudFront` for the User-Agent. The client user-agent is not supplied.
 * In fact, no request headers will be provided to the origin (unless configured, as it can be done for cookies).
 
+### API Gateway
+
+> TODO
+
 ## Methodology
 
 The key to success is having a well defined system. While this rule applies to life as a whole it is particularly useful when performing security assessments. The following table can be used to kickstart any AWS security assessment project:
